@@ -1,0 +1,23 @@
+{
+    "font_face": "Source Code Pro Light",
+    "font-size": 13,
+    "caret": "block",
+    "rulers": [0, 120],
+    "translate_tabs_to_spaces": true,
+    "draw_centered": true,
+    "highlight_line": true,
+    "caret_style": "solid",
+    "caret_extra_top": 1,
+    "caret_extra_bottom": 1,
+    "caret_extra_width": 1,
+
+    "copy_with_empty_selection": false,
+    "show_encoding": true,
+    "show_line_endings": true,
+    "theme": "Spacegray Eighties.sublime-theme",
+    "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+    "ignored_packages":
+    [
+        "Vintage"
+    ]
+}

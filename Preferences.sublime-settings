@@ -3,6 +3,7 @@
     "font-size": 13,
     "caret": "block",
     "rulers": [0, 120],
+    "wrap_width": 120,
     "translate_tabs_to_spaces": true,
     "draw_centered": true,
     "highlight_line": true,

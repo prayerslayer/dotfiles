@@ -11,7 +11,7 @@
     "caret_extra_top": 1,
     "caret_extra_bottom": 1,
     "caret_extra_width": 1,
-
+    "folder_exclude_patterns": [ "node_modules", "node", "target" ],
     "copy_with_empty_selection": false,
     "show_encoding": true,
     "show_line_endings": true,

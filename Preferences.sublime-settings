@@ -1,24 +1,40 @@
 {
-    "font_face": "Source Code Pro Light",
-    "font-size": 13,
-    "caret": "block",
-    "rulers": [0, 120],
-    "wrap_width": 120,
-    "translate_tabs_to_spaces": true,
-    "draw_centered": true,
-    "highlight_line": true,
-    "caret_style": "solid",
-    "caret_extra_top": 1,
-    "caret_extra_bottom": 1,
-    "caret_extra_width": 1,
-    "folder_exclude_patterns": [ "node_modules", "node", "target" ],
-    "copy_with_empty_selection": false,
-    "show_encoding": true,
-    "show_line_endings": true,
-    "theme": "Spacegray Eighties.sublime-theme",
-    "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
-    "ignored_packages":
-    [
-        "Vintage"
-    ]
+	"always_show_minimap_viewport": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 1,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+	"copy_with_empty_selection": false,
+	"default_line_ending": "unix",
+	"draw_centered": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"node",
+		"node_modules",
+		"karma",
+		"target"
+	],
+	"font_face": "Source Code Pro ExtraLight",
+	"font_size": 15,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"match_brackets": false,
+	"rulers":
+	[
+		0,
+		120
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": "auto",
+	"wrap_width": 120
 }

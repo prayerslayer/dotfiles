@@ -1,0 +1,64 @@
+{
+  "editor.fontFamily": "Iosevka, Menlo, Monaco, monospace",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "solid",
+  "editor.fontLigatures": true,
+  "editor.autoIndent": true,
+  "editor.lineNumbers": "interval",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "workbench.fontAliasing": "auto",
+  "workbench.colorCustomizations": {
+    "editorBracketMatch.background": "#FF1493",
+    "editorBracketMatch.border": "#FF1493",
+  },
+  "git.confirmSync": false,
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.fontFamily": "Iosevka, Menlo, Monaco, monospace",
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/dist/**/*": true,
+    "**/node_modules/**/*": true,
+    "**/__pycache__/": true,
+    "**/*.py.bak": true,
+    ".vscode/": true,
+    "**/.tox/**": true,
+    "**/coverage/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "trailing-spaces.trimOnSave": true,
+  "trailing-spaces.includeEmptyLines": true,
+  "window.zoomLevel": 0,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "typescript.check.npmIsInstalled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": false,
+  "python.disablePromptForFeatures": [
+    "pylint"
+  ],
+  "python.formatting.provider": "autopep8",
+}

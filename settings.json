@@ -1,9 +1,32 @@
 {
   "editor.fontFamily": "Iosevka, Menlo, Monaco, monospace",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "editor.fontSize": 16,
   "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": false,
+    "strings": true
+  },
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
+  "editor.folding": false,
+  "editor.tabCompletion": "on",
   "editor.cursorBlinking": "solid",
   "editor.fontLigatures": true,
   "editor.autoIndent": true,
@@ -12,10 +35,11 @@
     80,
     120
   ],
+  "zenMode.centerLayout": false,
   "workbench.fontAliasing": "auto",
   "workbench.colorCustomizations": {
     "editorBracketMatch.background": "#FF1493",
-    "editorBracketMatch.border": "#FF1493",
+    "editorBracketMatch.border": "#FF1493"
   },
   "git.confirmSync": false,
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
@@ -34,7 +58,7 @@
   "search.exclude": {
     "**/node_modules": true
   },
-  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
   "eslint.validate": [
     {
       "language": "javascript",
@@ -43,22 +67,31 @@
     {
       "language": "javascriptreact",
       "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
     }
   ],
-  "prettier.eslintIntegration": true,
-  "prettier.singleQuote": true,
   "trailing-spaces.trimOnSave": true,
   "trailing-spaces.includeEmptyLines": true,
   "window.zoomLevel": 0,
-  "[python]": {
-    "editor.tabSize": 4
-  },
   "typescript.check.npmIsInstalled": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "extensions.ignoreRecommendations": false,
-  "python.disablePromptForFeatures": [
-    "pylint"
-  ],
-  "python.formatting.provider": "autopep8"
+  "python.formatting.provider": "autopep8",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.hideCursorInOverviewRuler": true,
+  "search.location": "sidebar",
+  "eslint.packageManager": "yarn",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.tabSize": 4
+  }
 }

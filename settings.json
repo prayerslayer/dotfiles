@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Iosevka, Menlo, Monaco, monospace",
+  "editor.fontFamily": "Iosevka, Fira Code, Menlo, Monaco, monospace",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -16,7 +16,7 @@
       }
     ]
   },
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.quickSuggestions": {
     "comments": false,
@@ -31,10 +31,7 @@
   "editor.fontLigatures": true,
   "editor.autoIndent": true,
   "editor.lineNumbers": "interval",
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "zenMode.centerLayout": false,
   "workbench.fontAliasing": "auto",
   "workbench.colorCustomizations": {
@@ -42,7 +39,7 @@
     "editorBracketMatch.border": "#FF1493"
   },
   "git.confirmSync": false,
-  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.fontFamily": "Iosevka, Menlo, Monaco, monospace",
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
@@ -58,25 +55,8 @@
   "search.exclude": {
     "**/node_modules": true
   },
+  "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
-  "eslint.validate": [
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
   "trailing-spaces.trimOnSave": true,
   "trailing-spaces.includeEmptyLines": true,
   "window.zoomLevel": 0,
@@ -84,7 +64,22 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "extensions.ignoreRecommendations": false,
-  "python.formatting.provider": "autopep8",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.hideCursorInOverviewRuler": true,
@@ -93,5 +88,9 @@
   "editor.formatOnSave": true,
   "[python]": {
     "editor.tabSize": 4
-  }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontWeight": "400"
 }

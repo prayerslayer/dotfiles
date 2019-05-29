@@ -36,7 +36,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -68,6 +68,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export PATH="$PATH:/miniconda3/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -92,6 +93,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+function b() {
+  if [[ $# == 0 ]]; then
+    git branch --sort=-committerdate | head -n 20 | sort
+  else
+    git branch --sort=-committerdate | head -n 20 | sort | grep "$1" | xargs -n 1 git checkout
+  fi
+}
+
 alias d="docker "
 alias dc="docker-compose "
 alias dcl="docker-compose logs -f --tail=200 "
@@ -106,7 +115,6 @@ alias gl="git log --graph --pretty=oneline --abbrev-commit --decorate=short"
 alias gm="git merge"
 alias gr="git rebase --interactive"
 alias gsu="git submodule update --recursive"
-alias b="git branch --sort=-committerdate | head -n 20 | sort"
 
 alias ls="ls -GHAa1p"
 alias mkdir="mkdir -p"
@@ -116,7 +124,27 @@ alias npmw="npm test -- --watch"
 alias mf="make fresh"
 alias how="cat package.json | jq .scripts"
 
+alias awsv="aws-vault exec -n default --"
+alias awsva="aws-vault exec -n admin --"
+alias awsla="aws-vault login admin"
+alias awsl="aws-vault login default"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

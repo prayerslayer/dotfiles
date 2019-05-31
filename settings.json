@@ -36,7 +36,16 @@
   "workbench.fontAliasing": "auto",
   "workbench.colorCustomizations": {
     "editorBracketMatch.background": "#FF1493",
-    "editorBracketMatch.border": "#FF1493"
+    "editorBracketMatch.border": "#FF1493",
+    "editor.foreground": "#fff",
+    "editor.background": "#111",
+    "activityBar.background": "#222",
+    "editorGroupHeader.tabsBackground": "#111",
+    "tab.activeBackground": "#222",
+    "tab.inactiveBackground": "#111",
+    "statusBar.background": "#222",
+    "sideBar.background": "#111",
+    "panel.background": "#111"
   },
   "git.confirmSync": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
@@ -55,8 +64,6 @@
   "search.exclude": {
     "**/node_modules": true
   },
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
   "trailing-spaces.trimOnSave": true,
   "trailing-spaces.includeEmptyLines": true,
   "window.zoomLevel": 0,
@@ -84,13 +91,19 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.hideCursorInOverviewRuler": true,
   "search.location": "sidebar",
-  "eslint.packageManager": "yarn",
   "editor.formatOnSave": true,
   "[python]": {
     "editor.tabSize": 4
   },
+  "python.formatting.provider": "black",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontWeight": "400"
+  "editor.fontWeight": "400",
+  "editor.minimap.enabled": false,
+  "latex-workshop.message.update.show": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": true
 }

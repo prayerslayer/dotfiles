@@ -37,15 +37,7 @@
   "workbench.colorCustomizations": {
     "editorBracketMatch.background": "#FF1493",
     "editorBracketMatch.border": "#FF1493",
-    "editor.foreground": "#fff",
-    "editor.background": "#111",
-    "activityBar.background": "#222",
-    "editorGroupHeader.tabsBackground": "#111",
-    "tab.activeBackground": "#222",
-    "tab.inactiveBackground": "#111",
-    "statusBar.background": "#222",
-    "sideBar.background": "#111",
-    "panel.background": "#111"
+    "editorRuler.foreground": "#333"
   },
   "git.confirmSync": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
@@ -91,6 +83,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.hideCursorInOverviewRuler": true,
   "search.location": "sidebar",
+  "workbench.tree.renderIndentGuides": "none",
   "editor.formatOnSave": true,
   "[python]": {
     "editor.tabSize": 4
@@ -105,5 +98,78 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "workbench.colorTheme": "Default High Contrast",
+  "editor.suggest.filterGraceful": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
+  "eslint.enable": true,
+  "eslint.provideLintTask": true,
+  "eslint.options": {
+      "configFile": "./frontend/config/.eslintrc.yml"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+      { "language": "javascript", "autoFix": true },
+      { "language": "javascriptreact", "autoFix": true },
+      { "language": "typescript", "autoFix": true },
+      { "language": "typescriptreact", "autoFix": true }
+  ],
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ]
 }

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+session="dnai"
+
+cd ~/projects/
+# in wsl windows
+unset XDG_RUNTIME_DIR
+
+tmux new-session -d -s $session
+
+tmux rename-window -t $session:0 "window-name"
+tmux send-keys -t "window-name" "cd ~/projects" C-m
+tmux split-window -t "window-name" -h
+tmux send-keys -t "window-name" "cd subproject" C-m "pyenv activate env" C-m "make dev" C-m
+tmux split-window -t "servers" -v
+tmux send-keys -t "servers" "cd dna-insight-data-platform-storage-and-serving-service" C-m "pyenv activate venv" C-m "make dev" C-m
+
+tmux attach-session -t $session:0
